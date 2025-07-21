@@ -1,3 +1,14 @@
+/*
+Problem statement: Implement the problem statemnt of moving all zeros to end of the array.
+Description: Given an array of random numbers push all the zeros of the given array at the end of the array.
+*/
+
+/*Input:
+Enter array size: 5
+Enter 5 elements:1 0 222 0 0  */
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -50,7 +61,7 @@ void printArray(int arr[], int n) {
 
 int main() {
     int n;
-    cout << "Enter array size (max 10): ";
+    cout << "Enter array size: ";
     cin >> n;
 
     int arr[10];
@@ -63,8 +74,15 @@ int main() {
 
     mergeSort(arr, 0, n - 1);
 
-    cout << "Sorted array (Descending):\n";
+    cout << "Zero appended to end of array: \n";
     printArray(arr, n);
 
     return 0;
 }
+
+
+/*Output:
+Original array:
+1 0 222 0 0 
+Zero appended to end of array:
+222 1 0 0 0 */
